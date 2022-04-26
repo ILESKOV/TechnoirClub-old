@@ -40,11 +40,6 @@
             <div class="col-lg-4 robotBox m-2 light-b-shadow">
                 <div class="robot" id="newRobot">
 
-                    <div class="ears">
-                        <div class="ear left_ear"></div>
-                        <div class="ear right_ear"></div>
-                    </div>
-    
                     <div class="head">
                       <div class="mouth"></div>
                       <div class="eyes movingEyes">
@@ -139,7 +134,7 @@
                  </div>
                 
                  <br>
-                 <div class="IdDiv" id="robotId">
+                 <div class="IdBox" id="robotId">
                      <b>
                          ROBOT ID:
                          <!-- Colors -->
@@ -227,7 +222,7 @@
                 <button class="btn btn-primary ml-2 tsp-1 m-1 light-b-shadow" onclick="renderRobot(defaultId)"><b>Default robot</b></button>
             </div>
             <div class=" group-btn float-right">
-                <button class="btn btn-success mr-5  tsp-1 m-1 light-b-shadow" onclick="getKitties()"><b>Get Kitty</b></button>
+                <button class="btn btn-success mr-5  tsp-1 m-1 light-b-shadow" onclick="getRobots()"><b>Get Kitty</b></button>
                 <button class="btn btn-success mr-5 tsp-1 m-1 light-b-shadow" onclick="createRobot()"><b>Create robot</b></button>
             </div>
             <br>
@@ -243,8 +238,8 @@
 
 
     <script src="assets/js/colors.js"></script>
-    <script src="assets/js/catFactory/robotSettings.js"></script>
-    <script src="assets/js/catFactory/robotFactory.js"></script>
+    <script src="assets/js/robotFactory/robotSettings.js"></script>
+    <script src="assets/js/robotFactory/robotFactory.js"></script>
     <script src="assets/js/helpers.js"></script>
     <script src="assets/js/components.js"></script>
 

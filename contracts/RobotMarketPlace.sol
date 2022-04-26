@@ -62,7 +62,7 @@ contract RobotMarketPlace is RobotOwnership {
   {
     
     //contract have the ability to transfer robots
-    //As the robots will be in the market place we need to be able to transfert them
+    //As the robots will be in the market place we need to be able to transfer them
     //Checking if the user is owning the robot inside the approve function
     
     require(_price > 0.009 ether, "Robot price should be greater than 0.01");
@@ -119,7 +119,6 @@ contract RobotMarketPlace is RobotOwnership {
     //Remove the offer in the mapping
     delete tokenIdToOffer[_tokenId];
 
-    //TMP REMOVE THIS
     _approve(_tokenId, msg.sender);
 
 

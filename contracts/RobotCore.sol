@@ -49,9 +49,9 @@ contract RobotCore is Ownable, RobotMarketPlace {
 
       require(_firstRobotParentId != _secondRobotParentId, "The robot can't modify himself without scheme of another robot");
 
-      ( uint256 secondRobotParentId,,,,uint256 secondRobotParentGeneration ) = getKitty(_secondRobotParent);
+      ( uint256 secondRobotParentId,,,,uint256 secondRobotParentGeneration ) = getRobot(_secondRobotParentId);
 
-      ( uint256 firstRobotParentId,,,,uint256 firstRobotParentGeneration ) = getKitty(_firstRobotParentId);
+      ( uint256 firstRobotParentId,,,,uint256 firstRobotParentGeneration ) = getRobot(_firstRobotParentId);
 
       uint256 newRobotId;
       uint256 [8] memory IdArray;
@@ -86,7 +86,7 @@ contract RobotCore is Ownable, RobotMarketPlace {
 
       uint256 newRobotGeneration = 0;
       if (secondRobotParentGeneration < firstRobotParentGeneration){
-        newRobotGeneration = firstRobotParentGenerationn + 1;
+        newRobotGeneration = firstRobotParentGeneration + 1;
         newRobotGeneration /= 2;
       } else if (secondRobotParentGeneration > firstRobotParentGeneration){
         newRobotGeneration = secondRobotParentGeneration + 1;
@@ -124,9 +124,9 @@ contract RobotCore is Ownable, RobotMarketPlace {
     require(robot.buildTime > 0, "the robot doesn't exist");
 
     buildTime = uint256(robot.buildTime);
-    mumId = uint256(robot.firstRobotParentId);
-    dadId = uint256(robot.secondRobotParentId);
+    firstRobotParentId = uint256(robot.firstRobotParentId);
+    secondRobotParentId = uint256(robot.secondRobotParentId);
     generation = uint256(robot.generation);
-    id = kitty.id;
+    id = robot.id;
   }
 }

@@ -17,17 +17,17 @@ var defaultId = {
 
 // when page load
 $( document ).ready(function() {
-    $('#element1').html(defaultId.element1Color);
-    $('#element2').html(defaultId.element2Color);
-    $('#element3').html(defaultId.element3Color);
-    $('#element4').html(defaultId.element4Color);
+    // $('#element1').html(defaultId.element1Color);
+    // $('#element2').html(defaultId.element2Color);
+    // $('#element3').html(defaultId.element3Color);
+    // $('#element4').html(defaultId.element4Color);
       
-    $('#eyeshape').html(defaultId.eyesShape)
-    $('#decorationShape').html(defaultId.decorationPattern)
-    $('#element5').html(defaultId.element5Color)
-    $('#element6').html(defaultId.element6Color)
-    $('#idanimation').html(defaultId.animation)
-    $('#dnaspecial').html(defaultId.lastNum)
+    // $('#eyeshape').html(defaultId.eyesShape)
+    // $('#decorationShape').html(defaultId.decorationPattern)
+    // $('#element5').html(defaultId.element5Color)
+    // $('#element6').html(defaultId.element6Color)
+    // $('#idanimation').html(defaultId.animation)
+    // $('#idspecial').html(defaultId.lastNum)
   
   renderRobot(defaultId)
   });
@@ -43,30 +43,30 @@ $( document ).ready(function() {
       id += $('#element5').html()
       id += $('#element6').html()
       id += $('#idanimation').html()
-      id += $('#dnaspecial').html()
+      id += $('#idspecial').html()
   
       return parseInt(id)
   }
   
-  function renderRobot(dna){
-     element1Color(colors[dna.element1Color],dna.element1Color)
-     $('#element1_color').val(dna.element1Color)
-     element2Color(colors[dna.element2Color],dna.element2Color)
-     $('#element2_color').val(dna.element2Color)
-     element3Color(colors[dna.element3Color],dna.element3Color)
-     $('#element3_color').val(dna.element3Color)
-     element4Color(colors[dna.element4Color],dna.element4Color)
-     $('#element4_color').val(dna.element4Color)
-     element5Color(colors[dna.element5Color],dna.element5Color)
-     $('#element5_color').val(dna.element5Color)
-     element6Color(colors[dna.element6Color],dna.element6Color)
-     $('#element6_color').val(dna.element6Color)
-     eyeVariation(dna.eyesShape)
-     $('#eyeshape').val(dna.eyesShape)
-     decorationVariation(dna.decorationPattern)
-     $('#decorationshape').val(dna.decorationPattern)
-     animationVariation(dna.animation)
-     $("#animations").val(dna.animation)
+  function renderRobot(id){
+     element1Color(colors[id.element1Color],id.element1Color)
+     $('#element1_color').val(id.element1Color)
+     element2Color(colors[id.element2Color],id.element2Color)
+     $('#element2_color').val(id.element2Color)
+     element3Color(colors[id.element3Color],id.element3Color)
+     $('#element3_color').val(id.element3Color)
+     element4Color(colors[id.element4Color],id.element4Color)
+     $('#element4_color').val(id.element4Color)
+     element5Color(colors[id.element5Color],id.element5Color)
+     $('#element5_color').val(id.element5Color)
+     element6Color(colors[id.element6Color],id.element6Color)
+     $('#element6_color').val(id.element6Color)
+     eyeVariation(id.eyesShape)
+     $('#eyeshape').val(id.eyesShape)
+     decorationVariation(id.decorationPattern)
+     $('#decorationshape').val(id.decorationPattern)
+     animationVariation(id.animation)
+     $("#animations").val(id.animation)
   }
   
   //Settings to separate the color sliders and the attributes sliders.
@@ -136,7 +136,7 @@ $( document ).ready(function() {
   
   // to reload default robot
   $('.default').click(()=>{
-    renderRobot(defaultDNA)
+    renderRobot(defaultid)
   })
   
   // for random color from 10 up to 99 num
@@ -181,18 +181,8 @@ $( document ).ready(function() {
      animationVariation(random9)
      parseInt($("#animations").val(random9))
   }
-  
-  // for tabs to change from color or attributes
-  function openTab(colorAttribute) {
-    var i;
-    var x = document.getElementsByClassName("tab");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    document.getElementById(colorAttribute).style.display = "block";  
-  }
-  
-  //Showing Colors and Cattribute Boxes
+ 
+//Showing Colors and Cattribute Boxes
 
 function showColors(){
   $('#robotColors').removeClass('hidden')

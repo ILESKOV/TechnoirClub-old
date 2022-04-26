@@ -1,5 +1,4 @@
-var abi = {
-  robotContract: [
+var abi = [
   {
     "inputs": [],
     "payable": false,
@@ -43,29 +42,29 @@ var abi = {
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "kittyId",
+        "name": "robotId",
         "type": "uint256"
       },
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "mumId",
+        "name": "firstRobotParentId",
         "type": "uint256"
       },
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "dadId",
+        "name": "secondRobotParentId",
         "type": "uint256"
       },
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "genes",
+        "name": "id",
         "type": "uint256"
       }
     ],
-    "name": "Birth",
+    "name": "Build",
     "type": "event"
   },
   {
@@ -183,7 +182,7 @@ var abi = {
         "type": "uint256"
       }
     ],
-    "name": "buyKitty",
+    "name": "buyRobot",
     "outputs": [],
     "payable": true,
     "stateMutability": "payable",
@@ -244,48 +243,6 @@ var abi = {
         "internalType": "uint256",
         "name": "tokenId",
         "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "name": "kittyIndexToApproved",
-    "outputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "name": "kittyIndexToOwner",
-    "outputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
       }
     ],
     "payable": false,
@@ -356,6 +313,48 @@ var abi = {
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "robotIndexToApproved",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "robotIndexToOwner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
     "type": "function"
   },
   {
@@ -515,16 +514,16 @@ var abi = {
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "_dadId",
+        "name": "_secondRobotParentId",
         "type": "uint256"
       },
       {
         "internalType": "uint256",
-        "name": "_mumId",
+        "name": "_firstRobotParentId",
         "type": "uint256"
       }
     ],
-    "name": "Breeding",
+    "name": "Modifying",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -535,11 +534,11 @@ var abi = {
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "_genes",
+        "name": "_id",
         "type": "uint256"
       }
     ],
-    "name": "createKittyGen0",
+    "name": "createRobotGen0",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
@@ -554,26 +553,26 @@ var abi = {
         "type": "uint256"
       }
     ],
-    "name": "getKitty",
+    "name": "getRobot",
     "outputs": [
       {
         "internalType": "uint256",
-        "name": "genes",
+        "name": "id",
         "type": "uint256"
       },
       {
         "internalType": "uint256",
-        "name": "birthTime",
+        "name": "buildTime",
         "type": "uint256"
       },
       {
         "internalType": "uint256",
-        "name": "mumId",
+        "name": "firstRobotParentId",
         "type": "uint256"
       },
       {
         "internalType": "uint256",
-        "name": "dadId",
+        "name": "secondRobotParentId",
         "type": "uint256"
       },
       {
@@ -586,7 +585,4 @@ var abi = {
     "stateMutability": "view",
     "type": "function"
   }
-],
-marketplace: [
-
 ]

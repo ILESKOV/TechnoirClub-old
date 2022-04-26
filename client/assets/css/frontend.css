@@ -4,6 +4,12 @@
     color:#ffffff; 
 }
 
+.idDiv {
+    position: absolute;
+    left:15%;
+    bottom: 22%;
+}
+
 .navbar {
     background-color: #000000;
 }
@@ -11,29 +17,40 @@
 .frontend {
     height: 90vh;
     padding-top: 105px;    
-    background: #030303;
+    background: url('../images/banner.png') no-repeat;
     background-size: cover;
     background-position:bottom;
 }
 
+.badge {
+    padding: 0.25em 3.4em !important;
+    color:#1613b7!important;
+}
+  
+.badge-light {
+    color: #dee2e6 !important;
+    padding-bottom: 13px !important;
+    background-color: transparent !important;
+}
 
 .header {
     height: 30vh;
     padding-top: 105px;    
     margin-top: 15px;
-    background: #030303;
+    background: url('../images/banner.png') no-repeat;
     background-size: cover;
     background-position:center;
 }
 
 .robotHeader {
     height: 45vh;
-    padding-top: 105px;
-    margin-top: 11vh;
+    padding-top: 33px;
+    margin-top: 12vh;
+    padding-left: 820px;
     border-radius: 8px;
     margin-left: 1%;
-    margin-right: 1%;    
-    background: #607d8b;     
+    margin-right: 1%;
+    background: #620f0f;  
 }
 
 #singleRobot {
@@ -69,7 +86,7 @@
 }
 
 .banner {
-    background-color: rgba(161, 36, 7, 0.8);
+    background-color: rgba(212, 17, 17, 0.877);
     margin-top: -30px;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -94,9 +111,9 @@
 }
 
 .modifySelect {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     min-height: 5vh;
-    padding-left: 5vw;
+    padding-left: 8vw;
 }
 
 
@@ -111,7 +128,7 @@
     margin: 10px;
     transition: 0.8s ease-in-out;
     box-shadow: 0px 1px 7px -2px #444444;
-    background-color: #5d1b02;
+    background-color: rgba(212, 17, 17, 0.877);
 }
 
 .featureBox h4 {
@@ -126,8 +143,9 @@
 
 .robotDiv {
     padding-top: 50px;
-    padding-bottom: 140px;
-    width: fit-content;
+    padding-bottom: 0px;
+    width: auto;
+    padding-left: 82px;
 }
 
 .scheme {

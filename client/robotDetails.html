@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="assets/css/mystyle.css">
     <link rel="stylesheet" href="assets/css/colors.css">
     <link rel="stylesheet" href="assets/css/frontend.css">
-    <!-- Cats -->
+    <!-- Robots -->
     <link rel="stylesheet" href="assets/css/animations.css">
-    <link rel="stylesheet" href="assets/css/cats.css">
+    <link rel="stylesheet" href="assets/css/robots.css">
 
 </head>
 
@@ -33,9 +33,9 @@
         <div class="particle particle-1"></div>
     </div>
     <div class="robotHeader">
-
+        
         <div class="container">
-            <div id="singleRobot">
+            <div id="robotSingle">
 
             </div>
 
@@ -43,7 +43,7 @@
     </div>
 
     <div class="container middleBox mt-5">
-        <div id="catDNA" align="center"></div>
+        <div id="idRobot" align="center"></div>
         <br>
         <div class="hidden" align="center" id="buyBox">
             <div class="btn-group">
@@ -61,7 +61,7 @@
 
             <div class="col-lg-2 p-1 input-group">
                 
-                <input type="number" class="form-control" id="catPrice" placeholder="Price in ether">
+                <input type="number" class="form-control" id="robotPrice" placeholder="Price in ether">
                 <div class="input-group-append">
                     <span class="input-group-text" id="basic-addon2"><b>ETH</b></span>
                 </div>
@@ -73,7 +73,7 @@
         </div>
         <div id="message" align="center"></div>
         <br>
-        <div id="cattributes"></div>
+        <div id="attributes"></div>
 
     </div>
 
@@ -86,17 +86,17 @@
 
 
 <script>
-    // when page load fetch the cat
+    // when page load fetch the robot
     $(document).ready(function () {
         setTimeout(() => {
-            singleKitty()
+            singleRobot()
         }, 1000)
     });
 </script>
 
 <script src="assets/js/colors.js"></script>
-<script src="assets/js/catalogue/buildCat.js"></script>
-<script src="assets/js/catalogue/showCats.js"></script>
+<script src="assets/js/marketplace/buildRobot.js"></script>
+<script src="assets/js/marketplace/showRobots.js"></script>
 <script src="assets/js/components.js"></script>
 <script src="assets/js/helpers.js"></script>
 

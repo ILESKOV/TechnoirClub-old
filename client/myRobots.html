@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="assets/css/mystyle.css">
     <link rel="stylesheet" href="assets/css/colors.css">
     <link rel="stylesheet" href="assets/css/frontend.css">
-    <!-- Cats -->
+    <!-- Robots -->
     <link rel="stylesheet" href="assets/css/animations.css">
-    <link rel="stylesheet" href="assets/css/cats.css">
+    <link rel="stylesheet" href="assets/css/robots.css">
 
 </head>
 
@@ -45,9 +45,9 @@
     </div>
     
     <div class="container p-3">
-        <button class="btn red-btn mb-3 mt-3" onclick="go_to('breed.html')">Breed </button>
+        <button class="btn red-btn mb-3 mt-3" onclick="go_to('modify.html')">Modify </button>
         <br>
-        <div class="row" id="catsDiv">
+        <div class="row" id="robotsDiv">
 
         </div>
 
@@ -55,10 +55,10 @@
 
 
     <script>
-        // when page load create the catalog
+        // when page load create the marketplace
         $(document).ready(function () {
             setTimeout(() => {
-                myKitties()
+                myRobots()
             }, 1000)
         });
     </script>
@@ -67,8 +67,8 @@
 </body>
 
 <script src="assets/js/colors.js"></script>
-<script src="assets/js/catalogue/buildCat.js"></script>
-<script src="assets/js/catalogue/showCats.js"></script>
+<script src="assets/js/marketplace/buildRobot.js"></script>
+<script src="assets/js/marketplace/showRobots.js"></script>
 <script src="assets/js/components.js"></script>
 <script src="assets/js/helpers.js"></script>
 

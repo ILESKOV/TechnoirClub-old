@@ -11,7 +11,6 @@ body {
   background: #030303;
 }
 
-
 .navbar-light {
   background: #ffffff;
 }
@@ -34,7 +33,7 @@ html {
 
 p {
   letter-spacing: 1px;
-  color: rgb(202, 210, 216);
+  color: rgb(255 255 255);
 }
 
 h2 {
@@ -329,6 +328,7 @@ th {
 h4 {
   font-size: 1rem;
   font: message-box;
+  color: initial;
 }
 
 .fs-50 {
@@ -340,6 +340,7 @@ h4 {
 
 .m-0 {
   margin: 0px;
+  color: gainsboro;
 }
 
 .m-1 {

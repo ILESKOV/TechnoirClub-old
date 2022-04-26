@@ -63,7 +63,7 @@ function eyeVariation(num) {
     switch (num) {
         case 1:
             normalEyes()
-            $('#eyeName').html('Basic')// Set the badge to 'Basic'
+            $('#eyeName').html('Pop-eyed')// Set the badge to 'Pop-eyed'
             break
         case 2:
             normalEyes()
@@ -177,46 +177,46 @@ function decorationVariation(num) {
     switch (num) {
         case 1:
             normalDecoration()
-            $('#decorationName').html('code: ' + num)
+            $('#decorationName').html('Bion')
             break
         case 2:
             normalDecoration()
-            $('#decorationName').html('code: ' + num)
+            $('#decorationName').html('Machine')
             decoration2()
             break
         case 3:
             normalDecoration()
-            $('#decorationName').html('code: ' + num)
+            $('#decorationName').html('Droid')
             decoration3()
             break
         case 4:
             normalDecoration()
-            $('#decorationName').html('code: ' + num)
+            $('#decorationName').html('Sample 4044')
             decoration4()
             break
         case 5:
             normalDecoration()
-            $('#decorationName').html('code: ' + num)
+            $('#decorationName').html('Object 2305')
             decoration5()
             break  
         case 6:
             normalDecoration()
-            $('#decorationName').html('code: ' + num)
+            $('#decorationName').html('Сyborg')
             decoration6()
             break
         case 7:
             normalDecoration()
-            $('#decorationName').html('code: ' + num)
+            $('#decorationName').html('Humanoid')
             decoration7()
             break
         case 8:
             normalDecoration()
-            $('#decorationName').html('code: ' + num)
+            $('#decorationName').html('Terminator')
             decoration8()
             break
         case 9:
             normalDecoration()
-            $('#decorationName').html('code: ' + num)
+            $('#decorationName').html('Mutant')
             decoration9()
             break          
     }
@@ -291,34 +291,42 @@ async function decoration9() {
 function animationVariation(num){
     
     $('#idanimation').html(num)
-    $('#AnimationSlider').html('code: ' + num)
     switch (num) {
         case 1:
           animationType1()
+          $('#AnimationSlider').html('With laser eyes')
           break;
         case 2:
           animationType2()
+          $('#AnimationSlider').html('With great interest in communication')
           break;
         case 3:
           animationType3()
+          $('#AnimationSlider').html('With puffed up breasts')
           break;    
         case 4:
           animationType4()
+          $('#AnimationSlider').html('With big shoulders')
           break;    
         case 5:
           animationType5()
+          $('#AnimationSlider').html('With big tricepses')
           break;    
         case 6:
           animationType6()
+          $('#AnimationSlider').html('With huge bazookas')
           break;    
         case 7:
           animationType7()
+          $('#AnimationSlider').html('With big legs')
           break;    
         case 8:
           animationType8()
+          $('#AnimationSlider').html('With big forearms')
           break;    
         case 9:            
           animationType9()
+          $('#AnimationSlider').html('With bulging eyes')
           break;     
     }
 }
