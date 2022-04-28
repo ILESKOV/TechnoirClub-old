@@ -10,7 +10,6 @@
     <script type="text/javascript" src="./abi.js"></script>
     <script type="text/javascript" src="./index.js"></script>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <script src="assets/bootstrap/js/popper.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/css/mystyle.css">
     <link rel="stylesheet" href="assets/css/robots.css">
@@ -162,8 +161,8 @@
                <button class="btn btn-primary ml-2 tsp-1" onclick="showAttributes()"><b>Attributes</b></button>
         </div>
 
-<!-- Cat colors -->
-<div id="robotColors"><!--Remember to change class to id-->
+<!-- Robot colors -->
+<div id="robotColors">
                 <div class="form-group">
                     <label for="formControlRange"><b>Element 1 Color</b><span class="badge badge-dark ml-2" id="element1Slider"></span></label>
                     <input type="range" min="10" max="98" class="form-control-range" id="element1_color">
@@ -185,7 +184,7 @@
                 </div>
             </div>
 
- <!-- Cattributes   -->
+ <!-- Attributes   -->
             <div id="robotAttributes" class="hidden">
                 <div class="form-group">
                     <label for="formControlRange"><b>Eyes Shape</b><span class="badge badge-dark ml-2" id="eyeName"></span></label>
@@ -222,7 +221,6 @@
                 <button class="btn btn-primary ml-2 tsp-1 m-1 light-b-shadow" onclick="renderRobot(defaultId)"><b>Default robot</b></button>
             </div>
             <div class=" group-btn float-right">
-                <button class="btn btn-success mr-5  tsp-1 m-1 light-b-shadow" onclick="getRobots()"><b>Get Kitty</b></button>
                 <button class="btn btn-success mr-5 tsp-1 m-1 light-b-shadow" onclick="createRobot()"><b>Create robot</b></button>
             </div>
             <br>

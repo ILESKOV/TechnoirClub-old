@@ -15,47 +15,45 @@ function genColors(){
 
 
 function element1Color(color,code) {
-    $('.triceps, .head, .forearm, .shoulder, .leg, .biceps').css('background', '#' + color)  //This changes the color of the cat
+    $('.triceps, .head, .forearm, .shoulder, .leg, .biceps').css('background', '#' + color)  //This changes the color of the robot
     $('#element1Slider').html('code: '+code) //This updates text of the badge next to the slider
-    $('#element1').html(code) //This updates the body color part of the DNA that is displayed below the cat
+    $('#element1').html(code) //This updates the body color part of the ID that is displayed below the robot
 }
 
 function element2Color(color,code) {
-    $(' .chest').css('background', '#' + color)  //This changes the color of the cat
+    $(' .chest').css('background', '#' + color)  //This changes the color of the robot
     $('#element2Slider').html('code: '+code) //This updates text of the badge next to the slider
-    $('#element2').html(code) //This updates the body color part of the DNA that is displayed below the cat
+    $('#element2').html(code) //This updates the body color part of the ID that is displayed below the robot
 }
 
 function element3Color(color,code) {
-    $('.body, .finger').css('background', '#' + color)  //This changes the color of the cat
+    $('.body, .finger').css('background', '#' + color)  //This changes the color of the robot
     $('#elemen3Slider').html('code: '+code) //This updates text of the badge next to the slider
-    $('#element3').html(code) //This updates the body color part of the DNA that is displayed below the cat
+    $('#element3').html(code) //This updates the body color part of the ID that is displayed below the robot
 }
 
 function element4Color(color,code) {
-    $('.pupils2').css('background', '#' + color)  //This changes the color of the cat
+    $('.pupils2').css('background', '#' + color)  //This changes the color of the robot
     $('#element4Slider').html('code: '+code) //This updates text of the badge next to the slider
-    $('#element4').html(code) //This updates the body color part of the DNA that is displayed below the cat
+    $('#element4').html(code) //This updates the body color part of the ID that is displayed below the robot
 }
 
 function element5Color(color,code) {
-    $('.decor1').css('background-color', '#' + color)  //This changes the color of the cat
+    $('.decor1').css('background-color', '#' + color)  //This changes the color of the robot
     $('#element5Slider').html('code: '+code) //This updates text of the badge next to the slider
-    $('#element5').html(code) //This updates the body color part of the DNA that is displayed below the cat
+    $('#element5').html(code) //This updates the body color part of the ID that is displayed below the robot
 }
 
 function element6Color(color,code) {
-    $('.decor2').css('background-color', '#' + color)  //This changes the color of the cat
+    $('.decor2').css('background-color', '#' + color)  //This changes the color of the robot
     $('#element6Slider').html('code: '+code) //This updates text of the badge next to the slider
-    $('#element6').html(code) //This updates the body color part of the DNA that is displayed below the cat
+    $('#element6').html(code) //This updates the body color part of the ID that is displayed below the robot
 }
 
 
 
 
-//###################################################
-//Functions below will be used later on in the project
-//###################################################
+
 function eyeVariation(num) {
 
     $('#eyeshape').html(num)
@@ -224,7 +222,7 @@ function decorationVariation(num) {
 
 async function normalDecoration() {
     //Remove all style from other decorations
-    //In this way we can also use normalDecoration() to reset the decoration style
+    //In this way normalDecoration() is used to reset the decoration style
     await $('.decoration').find('section').css({"width": "0px", "height": "43px", "background-color": "#101111", 
                                                 "border": "1px solid black", "position": "relative", "bottom": "403px",
                                                 "left": "98px", "z-index": "1", "transform": "rotate(0deg)"})
@@ -298,7 +296,7 @@ function animationVariation(num){
           break;
         case 2:
           animationType2()
-          $('#AnimationSlider').html('With great interest in communication')
+          $('#AnimationSlider').html('With great interest in communirobotion')
           break;
         case 3:
           animationType3()

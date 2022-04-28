@@ -17,18 +17,6 @@ var defaultId = {
 
 // when page load
 $( document ).ready(function() {
-    // $('#element1').html(defaultId.element1Color);
-    // $('#element2').html(defaultId.element2Color);
-    // $('#element3').html(defaultId.element3Color);
-    // $('#element4').html(defaultId.element4Color);
-      
-    // $('#eyeshape').html(defaultId.eyesShape)
-    // $('#decorationShape').html(defaultId.decorationPattern)
-    // $('#element5').html(defaultId.element5Color)
-    // $('#element6').html(defaultId.element6Color)
-    // $('#idanimation').html(defaultId.animation)
-    // $('#idspecial').html(defaultId.lastNum)
-  
   renderRobot(defaultId)
   });
   
@@ -106,13 +94,13 @@ $( document ).ready(function() {
   
   // Changing eyes shape
   $('#eyeshape').change(()=>{
-    var shape = parseInt($('#eyeshape').val()) //between 1 and 7
+    var shape = parseInt($('#eyeshape').val()) //between 1 and 9
     eyeVariation(shape)
   })
   
   // Changing decoration shape
   $('#decorationshape').change(()=>{
-    var shape = parseInt($('#decorationshape').val()) //between 1 and 7
+    var shape = parseInt($('#decorationshape').val()) //between 1 and 9
     decorationVariation(shape)
   })
   
@@ -128,7 +116,7 @@ $( document ).ready(function() {
     element6Color(colors[colorVal],colorVal)
   })
   
-  // Changing decoration2 color
+  // Changing animation
   $('#animations').change(()=>{
     var animationVal = parseInt($('#animations').val())
     animationVariation(animationVal)
@@ -182,7 +170,7 @@ $( document ).ready(function() {
      parseInt($("#animations").val(random9))
   }
  
-//Showing Colors and Cattribute Boxes
+//Showing Colors and Attribute Boxes
 
 function showColors(){
   $('#robotColors').removeClass('hidden')

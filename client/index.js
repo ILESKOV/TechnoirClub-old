@@ -3,7 +3,7 @@ var instance;
 var user;
 var IdStr = "457896541299";
 
-var contract = "0x204E46C97B698dc15635c47f1EA8599F6BA25c1A";
+var contract = "0x0F2De0117C01FE834cAa557fefE95223696000EC";
 var contractOwner;
 
 $(document).ready(function () {

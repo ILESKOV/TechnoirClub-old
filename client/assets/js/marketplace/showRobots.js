@@ -12,9 +12,9 @@ function robotAppend(id, index, generation) {
     renderRobot(RobotId, index)
     $('#robotview' + index).attr('onclick', 'go_to("robotDetails.html?robotId=' + index + '")')
     $('#robotId' + index).html(`
-    <span class="badge badge-light"><h4 class="tsp-2 m-0"><b>GENERATION:</b>`+ generation + `</h4></span>
+    <span><h4 class="tsp-2 m-0"><b>GENERATION:</b>`+ generation + `</h4></span>
     <br>
-    <span class="badge badge-light"><h4 class="tsp-2 m-0"><b>ID:</b>`+ id + `</h4></span>`)
+    <span><h4 class="tsp-2 m-0"><b>ID:</b>`+ id + `</h4></span>`)
 }
 
 //Append robot for breeding
@@ -26,9 +26,9 @@ function modifyAppend(id, index, generation, firstOrSecond) {
     //3 Render the robots CSS style depending on ID string
     renderRobot(RobotId, index)
     $('#robotId' + index).html(`
-    <span class="badge badge-light"><h4 class="tsp-2 m-0"><b>GENERATION:</b>`+ generation + `</h4></span>
+    <span><h4 class="tsp-2 m-0"><b>GENERATION:</b>`+ generation + `</h4></span>
     <br>
-    <span class="badge badge-light"><h4 class="tsp-2 m-0"><b>ID:</b>`+ id + `</h4></span>`)
+    <span><h4 class="tsp-2 m-0"><b>ID:</b>`+ id + `</h4></span>`)
 
     $('#robotview' + index).attr('onclick', 'selectModify("' + id + '","' + index + '","' + generation + '","' + firstOrSecond + '")')
 }
@@ -48,9 +48,9 @@ function selectModify(id, index, generation, firstOrSecond) {
     $('#' + firstOrSecond).attr('data-robotid', index)
     $('#' + firstOrSecond).attr('onclick', 'modifyRobots("' + firstOrSecond + '")')
     $('#robotId' + firstOrSecond).html(`
-    <span class="badge badge-light"><h4 class="tsp-2 m-0"><b>GENERATION:</b>`+ generation + `</h4><input class="hidden" id="` + firstOrSecond + `Id" type="number" value=` + index + `></span>
+    <span><h4 class="tsp-2 m-0"><b>GENERATION:</b>`+ generation + `</h4><input class="hidden" id="` + firstOrSecond + `Id" type="number" value=` + index + `></span>
     <br>
-    <span class="badge badge-light"><h4 class="tsp-2 m-0"><b>ID:</b>`+ id + `</h4></span>`)
+    <span><h4 class="tsp-2 m-0"><b>ID:</b>`+ id + `</h4></span>`)
     $('#robotSelection').modal('hide')
     removeSelection(index, firstOrSecond)
     readyToModify()
@@ -115,9 +115,9 @@ async function robotSingle(id, index, generation) {
     //3 Render the robots CSS style depending on ID string
     renderRobot(RobotId, index)
     $('#idRobot').html(`
-    <span class="badge badge-light"><h4 class="tsp-2 m-0"><b>GENERATION:</b>`+ generation + `</h4></span>
+    <span><h4 class="tsp-2 m-0"><b>GENERATION:</b>`+ generation + `</h4></span>
     <br>
-    <span class="badge badge-light"><h4 class="tsp-2 m-0"><b>ID:</b>`+ id + `</h4></span>`)
+    <span><h4 class="tsp-2 m-0"><b>ID:</b>`+ id + `</h4></span>`)
     
     await robotOffer(index)
 }

@@ -22,17 +22,6 @@
     background-position:bottom;
 }
 
-.badge {
-    padding: 0.25em 3.4em !important;
-    color:#1613b7!important;
-}
-  
-.badge-light {
-    color: #dee2e6 !important;
-    padding-bottom: 13px !important;
-    background-color: transparent !important;
-}
-
 .header {
     height: 30vh;
     padding-top: 105px;    

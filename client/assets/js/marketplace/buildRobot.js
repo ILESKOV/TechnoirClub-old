@@ -183,7 +183,7 @@ function animationVariation(num, id) {
     }
 }
 
-// **   Eyes **  //
+//   Eyes 
 
 function normalEyes(id) {
     $('#eyes' + id).find('span').css({"border-radius": "50%", "width": "38px", "height": "53px",
@@ -247,11 +247,11 @@ function eyes9(id) {
     $('.pupils' + id).find('section').css({"top": "5px", "left": "5px", "width": "18px", "height": "18px"})
 }
 
-// **   Decoration **  //
+//   Decoration   
 
 function normaldecoration(id) {
     //Remove all style from other decorations
-    //In this way we can also use normalDecoration() to reset the decoration style
+    //In this way normalDecoration() is used to reset the decoration style
     $('#robot_scheme' + id).css({"width": "2px", "height": "43px", "background-color": "#101111", 
                                                 "border": "1px solid black", "position": "relative", "bottom": "403px",
                                                 "left": "98px", "z-index": "1", "transform": "rotate(0deg)"})
@@ -315,7 +315,7 @@ function decoration9(id) {
     $('#robot_scheme2' + id).css({"left": "58px", "top": "-36px", "height": "75px"})
 }
 
-/** Animations **/
+//  Animations 
 
 async function resetAnimation(id) {
     $("#pupils2" + id).removeClass("movingPupils")

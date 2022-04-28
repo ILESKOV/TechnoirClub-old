@@ -11,7 +11,7 @@ contract RobotCore is Ownable, RobotMarketPlace {
   uint256 public gen0Counter;
 
   constructor() public {
-    // We are creating the first kitty at index 0  
+    // We are creating the first robot at index 0  
     _createRobot(0, 0, 0, uint256(-1), address(0));
   }
 
