@@ -30,11 +30,13 @@
 List the ready features here:
 - Awesome Frontend
 - Trillions of different robots combination. Every robot is totally unique!
-- Modyfiyng feature. User can create new generation robot from two another robots
+- Modyfying feature. User can create new generation robot from two another robots
 
 
 ## Screenshots
 ![Example screenshot](./Screenshot.png)
+![Example screenshot](./Screenshot1.png)
+![Example screenshot](./Screenshot3.png)
 
 
 ## Setup
