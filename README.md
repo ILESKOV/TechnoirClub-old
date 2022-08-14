@@ -1,4 +1,5 @@
-# <img src="/helpers/READMEpng/2.png" alt="2" width="50" height="50" /> TechNoir Club <img src="/helpers/READMEpng/4.png" alt="4" width="50" height="50" />
+<img src="/helpers/READMEpng/2.png" alt="2" width="100" height="100" /><img src="/helpers/READMEpng/4.png" alt="4" width="100" height="100" /><img src="/helpers/READMEpng/1.png" alt="1" width="100" height="100" /><img src="/helpers/READMEpng/3.png" alt="3" width="100" height="100" /><img src="/helpers/READMEpng/5.png" alt="5" width="100" height="100" /><img src="/helpers/READMEpng/6.png" alt="6" width="100" height="100" /><img src="/helpers/READMEpng/7.png" alt="7" width="100" height="100" />
+#TechNoir Club
 > ERC721 collection of Robot-Mutants with integrated  NFT marketplace and modifying features
 > Video explanation [_here_](https://drive.google.com/file/d/1JPvMUQxbuEBp40pdK7pxdyd1Wr5WGBuu/view?usp=sharing). 
 
