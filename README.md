@@ -1,4 +1,4 @@
-# ![Example screenshot](./helpers/READMEpng/1.png) TechNoir Club <img src="helpers/READMEpng/1.png" alt="1" width="25" height="25" />
+# <img src="/helpers/READMEpng/2.png" alt="2" width="50" height="50" /> TechNoir Club <img src="/helpers/READMEpng/4.png" alt="4" width="50" height="50" />
 > ERC721 collection of Robot-Mutants with integrated  NFT marketplace and modifying features
 > Video explanation [_here_](https://drive.google.com/file/d/1JPvMUQxbuEBp40pdK7pxdyd1Wr5WGBuu/view?usp=sharing). 
 
