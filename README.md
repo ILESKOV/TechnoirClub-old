@@ -1,4 +1,4 @@
-# TechNoir Club
+# ![Example screenshot](./helpers/READMEpng/1.png) TechNoir Club <img src="helpers/READMEpng/1.png" alt="1" width="25" height="25" />
 > ERC721 collection of Robot-Mutants with integrated  NFT marketplace and modifying features
 > Video explanation [_here_](https://drive.google.com/file/d/1JPvMUQxbuEBp40pdK7pxdyd1Wr5WGBuu/view?usp=sharing). 
 
@@ -34,9 +34,9 @@ List the ready features here:
 
 
 ## Screenshots
-![Example screenshot](./Screenshot.png)
-![Example screenshot](./Screenshot1.png)
-![Example screenshot](./Screenshot3.png)
+![Example screenshot](./helpers/READMEpng/Screenshot.png)
+![Example screenshot](./helpers/READMEpng/Screenshot1.png)
+![Example screenshot](./helpers/READMEpng/Screenshot3.png)
 
 
 ## Setup
