@@ -1,4 +1,4 @@
-<img src="/helpers/READMEpng/you.png" alt="banner" width="400" height="800" />
+<img src="/helpers/READMEpng/you.png" alt="banner" width="800" height="400" />
 <img src="/helpers/READMEpng/2.png" alt="2" width="100" height="100" /><img src="/helpers/READMEpng/4.png" alt="4" width="100" height="100" /><img src="/helpers/READMEpng/1.png" alt="1" width="100" height="100" /><img src="/helpers/READMEpng/3.png" alt="3" width="100" height="100" /><img src="/helpers/READMEpng/5.png" alt="5" width="100" height="100" /><img src="/helpers/READMEpng/6.png" alt="6" width="100" height="100" /><img src="/helpers/READMEpng/7.png" alt="7" width="100" height="100" /><img src="/helpers/READMEpng/9.png" alt="9" width="100" height="100" />
 
 # TechNoir Club
